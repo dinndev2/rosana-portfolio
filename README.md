@@ -41,8 +41,9 @@ npm install @rollup/rollup-linux-x64-gnu --no-save
 
 ## Before going live
 
-- Update the canonical/OG URLs in `index.html` and `public/sitemap.xml` from the
-  placeholder `https://rosanarosal.com/` to the real domain.
+- Site is deployed to GitHub Pages at
+  `https://dinndev2.github.io/rosana-portfolio/`. Update canonical/OG URLs when
+  moving to a custom domain.
 - Confirm the contact details in `src/App.tsx` (`EMAIL`, `PHONE_TEL`,
   `PHONE_DISPLAY`) and the JSON-LD block in `index.html`.
 
