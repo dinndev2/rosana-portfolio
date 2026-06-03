@@ -21,14 +21,37 @@ npm install
 npm run dev
 ```
 
-## Build (for deployment)
+## Free hosting (GitHub Pages)
+
+This project is set up for **$0 hosting** on public GitHub Pages — no Vercel Pro,
+no custom server, no paid CI.
+
+| What | Cost |
+|------|------|
+| GitHub public repo + Pages | Free |
+| Build on your machine (`npm run build`) | Free |
+| Deploy via `gh-pages` branch | Free (no Actions minutes) |
+
+**Live site:** https://dinndev2.github.io/rosana-portfolio/
+
+After you change the site, redeploy from your machine:
+
+```bash
+npm run deploy:pages
+```
+
+That builds `dist/` and pushes it to the `gh-pages` branch. GitHub serves it
+automatically.
+
+The `.github/workflows/deploy.yml` file is optional (auto-deploy on push). It
+only runs if GitHub Actions is available on your account; you do **not** need it
+for the free manual flow above.
+
+## Build
 
 ```bash
 npm run build      # type-checks, then outputs static files to dist/
 ```
-
-Everything needed is emitted to `dist/` — deploy that folder to any static host
-(Netlify, Vercel, Cloudflare Pages, GitHub Pages, S3, Nginx, etc.).
 
 ### Note on the rollup native binary
 
