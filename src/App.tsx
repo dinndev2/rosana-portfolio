@@ -9,7 +9,7 @@ import {
   HeroStage,
 } from "./components";
 
-const EMAIL = "rosanarosal994@gmail.com";
+const EMAIL = "rosanarosal1994@gmail.com";
 const PHONE_DISPLAY = "0978 445 3552";
 const PHONE_TEL = "+639784453552";
 
